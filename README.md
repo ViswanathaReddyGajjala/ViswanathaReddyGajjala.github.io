@@ -1,6 +1,13 @@
 ### Hi there 👋
 
-In Progress!
+
+🚧 Work in Progress!
+
+Connect with me on [LinkedIn](https://www.linkedin.com/in/viswa98/)
+
+Explore my research on [Google Scholar](https://scholar.google.com/citations?user=9C5TEbkAAAAJ&hl=en)
+
+Open to Collaborations 🤝
 
 ![](https://komarev.com/ghpvc/?username=ViswanathaReddyGajjala&color=blueviolet)
 
