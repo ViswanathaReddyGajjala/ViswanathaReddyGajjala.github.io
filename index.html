@@ -113,8 +113,51 @@
       padding-left: 20px;
     }
 
-    /* Research & Publication Cards */
-    .research-item, .publication-item {
+    /* Research Section Adjustments */
+    #research .container.content.research {
+      padding: 20px 0;
+    }
+    #research h2 {
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+    #research p {
+      margin: 5px 0;
+      line-height: 1.5;
+    }
+    .research-item {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 5px 0;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+    .research-item:last-child {
+      border-bottom: none;
+    }
+    .research-item > div:first-child {
+      flex: 1;
+      min-width: 250px;
+    }
+    .research-item > div:last-child {
+      flex-shrink: 0;
+      margin-left: 10px;
+    }
+    .research-item img,
+    .research-item video {
+      width: 150px;
+      height: auto;
+      display: block;
+      border-radius: 4px;
+    }
+
+    .authors {
+      margin-top: 1px;
+    }
+
+    /* Publication Cards (if needed later) */
+    .publication-item {
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 30px;
@@ -123,14 +166,12 @@
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-    .research-item > div, .publication-item > div {
+    .publication-item > div {
       flex: 1;
       min-width: 250px;
       margin: 10px;
     }
-    .research-item img,
-    .publication-item img,
-    .research-item video {
+    .publication-item img {
       max-width: 150px;
       border-radius: 8px;
     }
@@ -160,9 +201,13 @@
         flex-direction: column;
         align-items: center;
       }
+      .research-item > div:last-child {
+        margin-left: 0;
+        margin-top: 15px;
+      }
       .research-item img,
-      .publication-item img,
-      .research-item video {
+      .research-item video,
+      .publication-item img {
         margin-bottom: 10px;
       }
     }
@@ -187,32 +232,35 @@
 
   <!-- Hero / About Section -->
   <section id="about" class="hero">
-   <div class="container hero-content">
-     <div class="hero-text">
-       <h1>Viswanatha Reddy</h1>
-       <p>
-         I’m a Software Development Engineer (SDE) at Amazon. I earned my master’s degree from 
-         <a href="https://www.wisc.edu/" target="_blank">University of Wisconsin-Madison</a>, where I specialized in computer vision and its applications in healthcare. During my master's, I had the privilege of collaborating with 
-         <a href="https://www.biostat.wisc.edu/~yli/" target="_blank">Prof. Yin Li's</a> team.
-       </p>
-       <p>
-         My professional experience includes roles as a Machine Learning Researcher at Suspect Technologies and internships at Amazon and Aganitha Cognitive Solutions.
-       </p>
-       <p>
-         <a href="https://www.linkedin.com/in/viswa98/" target="_blank">LinkedIn</a> &nbsp;|&nbsp;
-         <a href="mailto:viswanatha.g15@iiits.in">Email</a> &nbsp;|&nbsp;
-         <a href="data/resume.pdf" target="_blank">CV</a> &nbsp;|&nbsp;
-         <a href="https://scholar.google.com/citations?user=9C5TEbkAAAAJ&hl=en" target="_blank">Scholar</a> &nbsp;|&nbsp;
-         <a href="https://github.com/ViswanathaReddyGajjala" target="_blank">Github</a>
-       </p>
-     </div>
-     <!-- <div class="hero-img">
-       <a href="images/empty_profile.jpg" target="_blank">
-         <img src="images/empty_profile.jpg" alt="Profile Photo">
-       </a>
-     </div> -->
-   </div>
- </section>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Viswanatha Reddy</h1>
+        <p>
+          I'm currently working as an SDE at Amazon. I earned my master's degree from 
+          <a href="https://www.wisc.edu/" target="_blank">University of Wisconsin-Madison</a>, where I specialized in computer vision and its applications in healthcare. During my master's, I had the privilege of collaborating with 
+          <a href="https://www.biostat.wisc.edu/~yli/" target="_blank">Prof. Yin Li's</a> team.
+        </p>
+        <p>
+          My professional experience includes roles as a Machine Learning Researcher at Suspect Technologies and internships at Amazon and Aganitha Cognitive Solutions.
+        </p>
+        <p>
+          <a href="https://www.linkedin.com/in/viswa98/" target="_blank">LinkedIn</a> &nbsp;|&nbsp;
+          <a href="mailto:viswanatha.g15@iiits.in">Email</a> &nbsp;|&nbsp;
+          <a href="data/resume.pdf" target="_blank">CV</a> &nbsp;|&nbsp;
+          <a href="https://scholar.google.com/citations?user=9C5TEbkAAAAJ&hl=en" target="_blank">Scholar</a> &nbsp;|&nbsp;
+          <a href="https://github.com/ViswanathaReddyGajjala" target="_blank">Github</a>
+        </p>
+      </div>
+      <!-- If you wish to include an image, uncomment below -->
+      <!-- 
+      <div class="hero-img">
+        <a href="images/empty_profile.jpg" target="_blank">
+          <img src="images/empty_profile.jpg" alt="Profile Photo">
+        </a>
+      </div>
+      -->
+    </div>
+  </section>
 
   <!-- News Section -->
   <section id="news">
@@ -240,12 +288,12 @@
         <div>
           <a href="https://abrarmajeedi.github.io/rica2_aqa/" target="_blank">
             <h3>RICA<sup>2</sup>: Rubric-Informed, Calibrated Assessment of Actions</h3>
-          </a>
-          <p>
+          </a>          
+          <p class="authors">
             <strong>Authors:</strong> Abrar Majeedi, Viswanatha Reddy Gajjala, Satya Sai Srinath Namburi GNVV, Yin Li.
           </p>
           <p>
-            <em>ECCV 2024</em>
+            <em>European Conference on Computer Vision (ECCV 2024)</em>
           </p>
           <p>
             Action quality assessment in videos by incorporating human-designed scoring rubrics while providing calibrated uncertainty estimates.
@@ -265,7 +313,7 @@
           <a href="https://epic-kitchens.github.io/2022#results" target="_blank">
             <h3>Detecting Egocentric Actions with ActionFormer</h3>
           </a>
-          <p>
+          <p class="authors">
             <strong>Authors:</strong> Chenlin Zhang, Lin Sui, Abrar Majeedi, Viswanatha Reddy Gajjala, Yin Li.
           </p>
           <p>
@@ -289,11 +337,11 @@
           <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Bhunia_Doodle_It_Yourself_Class_Incremental_Learning_by_Drawing_a_Few_CVPR_2022_paper.pdf" target="_blank">
             <h3>Doodle It Yourself: Class Incremental Learning by Drawing a Few Sketches</h3>
           </a>
-          <p>
+          <p class="authors">
             <strong>Authors:</strong> Ayan Kumar Bhunia, Viswanatha Reddy Gajjala, Subhadeep Koley, Rohit Kundu, Aneeshan Sain, Tao Xiang, Yi-Zhe Song.
           </p>
           <p>
-            <em>CVPR 2022</em>
+            <em>Conference on Computer Vision and Pattern Recognition (CVPR 2022)</em>
           </p>
           <p>
             <a href="https://github.com/AyanKumarBhunia/DIY-FSCIL" target="_blank">Code</a> |
