@@ -1,341 +1,392 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-   <title>Viswanatha Reddy</title>
-   <meta name="author" content="Viswanatha Reddy">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viswanatha Reddy</title>
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Header & Navigation */
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      padding: 40px 0;
+    }
+    .hero-text {
+      flex: 1 1 60%;
+      padding: 20px;
+    }
+    .hero-text h1 {
+      margin-top: 0;
+      font-size: 2.5rem;
+    }
+    .hero-text p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    .hero-img {
+      flex: 1 1 35%;
+      padding: 20px;
+      text-align: center;
+    }
+    .hero-img img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #333;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 40px 0;
+      background: #fff;
+      margin-bottom: 20px;
+    }
+    section:nth-of-type(even) {
+      background: #f9f9f9;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+    .content {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .news ul,
+    .publications ul,
+    .teaching ul,
+    .professional ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    /* Research & Publication Cards */
+    .research-item, .publication-item {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .research-item > div, .publication-item > div {
+      flex: 1;
+      min-width: 250px;
+      margin: 10px;
+    }
+    .research-item img,
+    .publication-item img,
+    .research-item video {
+      max-width: 150px;
+      border-radius: 8px;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #fff;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-text, .hero-img {
+        flex: 1 1 100%;
+      }
+      .research-item, .publication-item {
+        flex-direction: column;
+        align-items: center;
+      }
+      .research-item img,
+      .publication-item img,
+      .research-item video {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
 </head>
-
 <body>
-   <table
-      style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-      <tbody>
-         <tr style="padding:0px">
-            <td style="padding:0px">
-               <table
-                  style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                  <tbody>
-                     <tr style="padding:0px">
-                        <td style="padding:2.5%;width:63%;vertical-align:middle">
-                           <p class="name" style="text-align: center;">
-                              Viswanatha Reddy
-                           </p>
-                           <p> Website is still under construction. </p>
-                           <p>I’m a Software Development Engineer (SDE) at Amazon. I earned my master’s degree from the
-                              <a href="https://www.wisc.edu/">University of Wisconsin-Madison</a>, where I specialized
-                              in computer vision and its applications in healthcare. During my master's, I had the
-                              privilege of collaborating with <a href="https://www.biostat.wisc.edu/~yli/">Prof. Yin
-                                 Li's</a> team.</p>
-                           </p>
-                           <p>
-                              My professional experience includes roles as a Machine Learning Researcher at Suspect
-                              Technologies, as well as internships at Amazon and Aganitha Cognitive Solutions.
-                           </p>
-                           <p style="text-align:center">
-                              <a href="https://www.linkedin.com/in/viswa98/">LinkedIn</a> &nbsp;/&nbsp;
-                              <a href="mailto:viswanatha.g15@iiits.in">Email</a> &nbsp;/&nbsp;
-                              <a href="data/resume.pdf">CV</a> &nbsp;/&nbsp;
-                              <a href="https://scholar.google.com/citations?user=9C5TEbkAAAAJ&hl=en">Scholar</a>
-                              &nbsp;/&nbsp;
-                              <a href="https://github.com/ViswanathaReddyGajjala">Github</a>
-                           </p>
-                        </td>
-                        <td style="padding:2.5%;width:40%;max-width:40%">
-                           <a href="images/empty_profile.jpg"><img
-                                 style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;"
-                                 alt="profile photo" src="images/empty_profile.jpg" class="hoverZoomLink"></a>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
+  <!-- Header and Navigation -->
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#teaching">Teaching</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#professional">Professional</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <!-- Hero / About Section -->
+  <section id="about" class="hero">
+   <div class="container hero-content">
+     <div class="hero-text">
+       <h1>Viswanatha Reddy</h1>
+       <p>
+         I’m a Software Development Engineer (SDE) at Amazon. I earned my master’s degree from 
+         <a href="https://www.wisc.edu/" target="_blank">University of Wisconsin-Madison</a>, where I specialized in computer vision and its applications in healthcare. During my master's, I had the privilege of collaborating with 
+         <a href="https://www.biostat.wisc.edu/~yli/" target="_blank">Prof. Yin Li's</a> team.
+       </p>
+       <p>
+         My professional experience includes roles as a Machine Learning Researcher at Suspect Technologies and internships at Amazon and Aganitha Cognitive Solutions.
+       </p>
+       <p>
+         <a href="https://www.linkedin.com/in/viswa98/" target="_blank">LinkedIn</a> &nbsp;|&nbsp;
+         <a href="mailto:viswanatha.g15@iiits.in">Email</a> &nbsp;|&nbsp;
+         <a href="data/resume.pdf" target="_blank">CV</a> &nbsp;|&nbsp;
+         <a href="https://scholar.google.com/citations?user=9C5TEbkAAAAJ&hl=en" target="_blank">Scholar</a> &nbsp;|&nbsp;
+         <a href="https://github.com/ViswanathaReddyGajjala" target="_blank">Github</a>
+       </p>
+     </div>
+     <!-- <div class="hero-img">
+       <a href="images/empty_profile.jpg" target="_blank">
+         <img src="images/empty_profile.jpg" alt="Profile Photo">
+       </a>
+     </div> -->
+   </div>
+ </section>
 
-               <!-- News Section -->
-               <table
-                  style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                  <tbody>
-                     <tr>
-                        <td style="padding:20px;width:100%;vertical-align:middle">
-                           <h2>News</h2>
-                           <p>
-                              <!-- Add your news content here -->
-                           <ul>
-                              <li>July 2024: Our paper <a href="https://arxiv.org/abs/2408.02138">RICA^2:
-                                    Rubric-Informed, Calibrated Assessment of Actions </a> accepted to ECCV. </li>
-                              <li>May 2024: I gave an invited talk on video-based Action Quality Assessment to the predoctoral researchers at the Google Research team (Bangalore).</li>
-                           </ul>
-                           </p>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
+  <!-- News Section -->
+  <section id="news">
+    <div class="container content news">
+      <h2>News</h2>
+      <ul>
+        <li>July 2024: Our paper <a href="https://arxiv.org/abs/2408.02138" target="_blank">RICA<sup>2</sup>: Rubric-Informed, Calibrated Assessment of Actions</a> accepted to ECCV.</li>
+        <li>May 2024: I gave an invited talk on video-based Action Quality Assessment to the predoctoral researchers at the Google Research team (Bangalore).</li>
+      </ul>
+    </div>
+  </section>
 
-               <!-- Research Section -->
-               <table
-                  style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                  <tbody>
-                     <table
-                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                           <tr>
-                              <td style="padding:20px;width:100%;vertical-align:middle">
-                                 <h2>Research</h2>
-                                 <p>
-                                    My primary focus is on computer vision and deep learning. I have extensive
-                                    experience with projects in Generative AI, RAG-based workflows, agentic workflows,
-                                    and custom chatbots. My expertise also spans object detection, segmentation,
-                                    incremental learning, biometrics, and facial attribute prediction. Additionally, I
-                                    have worked with video machine learning and model deployment, including edge device
-                                    deployment, model quantization, and compression.
-                                 </p>
-                                 <p>
-                                    Recently, I've been delving into time series data analysis. Some papers are
-                                    highlighted below:
-                                 </p>
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     <table
-                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                           <!-- Highlighted publications -->
-                           <!--<tr bgcolor="#ffffd0"></tr> -->
-                           <tr>
-                              <td style="padding:20px;width:25%;vertical-align:middle">
-                                 <div class="one">
-                                    <div class="two" id='rica2_icon'>
-                                       <img src="images/rica2_icon.png" width="100%" />
-                                    </div>
-                                 </div>
-                              </td>
-                              <td style="padding:20px;width:75%;vertical-align:middle">
-                                 <a href="https://abrarmajeedi.github.io/rica2_aqa/">
-                                    <span class="papertitle">RICA<sup>2</sup>: Rubric-Informed, Calibrated Assessment of
-                                       Actions
-                                    </span>
-                                 </a>
-                                 <br>
-                                 <a href="https://abrarmajeedi.github.io/">Abrar Majeedi</a>,
-                                 Viswanatha Reddy Gajjala,
-                                 <a href="">Satya Sai Srinath Namburi GNVV</a>,
-                                 <a href="https://www.biostat.wisc.edu/~yli/">Yin Li</a>,
-                                 <br>
-                                 <em>European Conference on Computer Vision (<strong>ECCV</strong>) 2024</em>
-                                 <br>
-                                 <a href="https://abrarmajeedi.github.io/rica2_aqa/">Project page</a>
-                                 /
-                                 <a href="https://arxiv.org/abs/2408.02138">arXiv</a>
-                                 <p></p>
-                                 <p>
-                                    Action quality assessment in videos by incorporating human designed scoring rubrics
-                                    while providing calibrated uncertainty estimates.
-                                 </p>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td style="padding:20px;width:25%;vertical-align:middle">
-                                 <div class="one">
-                                    <div class="two" id='epic_2022_video'>
-                                       <video id="epic_video" width="100%" muted>
-                                          <source src="images/epic_2022_video.webm" type="video/webm">
-                                          Your browser does not support the video tag.
-                                       </video>
-                                    </div>
-                                 </div>
-                              </td>
-                              <td style="padding:20px;width:75%;vertical-align:middle">
-                                 <a href="https://epic-kitchens.github.io/2022#results">
-                                    <span class="papertitle">Detecting Egocentric Actions with ActionFormer</span>
-                                 </a>
-                                 <br>
-                                 <a href="">Chenlin Zhang</a>,
-                                 <a href="">Lin Sui</a>,
-                                 <a href="">Abrar Majeedi</a>,
-                                 Viswantha Reddy Gajjala,
-                                 <a href="https://www.biostat.wisc.edu/~yli/">Yin Li</a><br>
-                                 <em> <strong> Second position </strong> for Action Detection Challenge - 2022. EPIC @
-                                    <strong>CVPR</strong> Workshop</em>, 2022
-                                 <br>
-                                 <a
-                                    href="https://epic-kitchens.github.io/Reports/EPIC-KITCHENS-Challenges-2022-Report.pdf">Report</a>
-                                 /
-                                 <a href="https://github.com/happyharrycn/actionformer_release">Code</a>
-                                 <p></p>
-                                 <p>Assess perceptual quality of videos encoded by modern machine learning-based codecs.
-                                 </p>
-                              </td>
-                           </tr>
-                           <!-- CVPR 2022-->
-                           <tr>
-                              <td style="padding:20px;width:25%;vertical-align:middle">
-                                 <div class="one">
-                                    <div class="two" id='doodle_video'>
-                                       <!-- <video id="doodle_video" width="100%" muted>
-                                             <source src="images/CVPR22_2_1.JPG" type="video/webm">
-                                             Your browser does not support the video tag.
-                                             </video> -->
-                                       <img id="doodle_image" src="images/doodle_cvpr22.JPG" width="100%"
-                                          alt="CVPR22 Doodle">
-                                    </div>
-                                 </div>
-                              </td>
-                              <td style="padding:20px;width:75%;vertical-align:middle">
-                                 <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Bhunia_Doodle_It_Yourself_Class_Incremental_Learning_by_Drawing_a_Few_CVPR_2022_paper.pdf"
-                                    target="_blank">
-                                    <span class="papertitle">Doodle It Yourself: Class Incremental Learning by Drawing a
-                                       Few Sketches</span>
-                                 </a>
-                                 <br>
-                                 <a href="">Ayan Kumar Bhunia</a>,
-                                 Viswantha Reddy Gajjala,
-                                 <a href="">Subhadeep Koley</a>,
-                                 <a href="">Rohit Kundu</a>,
-                                 <a href="">Aneeshan Sain</a>,
-                                 <a href="">Tao Xiang</a>,
-                                 <a href="">Yi-Zhe Song</a><br>
-                                 <em>IEEE Conference on Computer Vision and Pattern Recognition (<strong>
-                                       CVPR</strong>)</em>, 2022
-                                 <br>
-                                 <a href="https://github.com/AyanKumarBhunia/DIY-FSCIL" target="_blank">Code</a>
-                                 /
-                                 <a href="https://arxiv.org/pdf/2203.14843.pdf" target="_blank">arXiv</a>
-                                 /
-                                 <a href="https://www.marktechpost.com/2022/04/14/doodle-it-yourself-diy-fscil-a-novel-ai-framework-for-few-shot-class-incremental-learning-without-violating-the-data-privacy-and-ethical-norms/"
-                                    target="_blank">Marktechpost Blog</a>
-                                 <p></p>
-                              </td>
-                           </tr>
-                     </table>
+  <!-- Research Section -->
+  <section id="research">
+    <div class="container content research">
+      <h2>Research</h2>
+      <p>
+        My primary focus is on computer vision and deep learning. I have extensive experience with projects in Generative AI, RAG-based workflows, agentic workflows, and custom chatbots. My expertise also spans object detection, segmentation, incremental learning, biometrics, and facial attribute prediction. Additionally, I have worked with video machine learning and model deployment, including edge device deployment, model quantization, and compression.
+      </p>
+      <p>
+        Recently, I've been delving into time series data analysis. Some highlighted projects:
+      </p>
+      <!-- Research Project 1 -->
+      <div class="research-item">
+        <div>
+          <a href="https://abrarmajeedi.github.io/rica2_aqa/" target="_blank">
+            <h3>RICA<sup>2</sup>: Rubric-Informed, Calibrated Assessment of Actions</h3>
+          </a>
+          <p>
+            <strong>Authors:</strong> Abrar Majeedi, Viswanatha Reddy Gajjala, Satya Sai Srinath Namburi GNVV, Yin Li.
+          </p>
+          <p>
+            <em>ECCV 2024</em>
+          </p>
+          <p>
+            Action quality assessment in videos by incorporating human-designed scoring rubrics while providing calibrated uncertainty estimates.
+          </p>
+          <p>
+            <a href="https://abrarmajeedi.github.io/rica2_aqa/" target="_blank">Project Page</a> |
+            <a href="https://arxiv.org/abs/2408.02138" target="_blank">arXiv</a>
+          </p>
+        </div>
+        <div>
+          <img src="images/rica2_icon.png" alt="RICA2 Icon">
+        </div>
+      </div>
+      <!-- Research Project 2 -->
+      <div class="research-item">
+        <div>
+          <a href="https://epic-kitchens.github.io/2022#results" target="_blank">
+            <h3>Detecting Egocentric Actions with ActionFormer</h3>
+          </a>
+          <p>
+            <strong>Authors:</strong> Chenlin Zhang, Lin Sui, Abrar Majeedi, Viswanatha Reddy Gajjala, Yin Li.
+          </p>
+          <p>
+            <em>Second position for Action Detection Challenge, CVPR Workshop 2022</em>
+          </p>
+          <p>
+            <a href="https://epic-kitchens.github.io/Reports/EPIC-KITCHENS-Challenges-2022-Report.pdf" target="_blank">Report</a> |
+            <a href="https://github.com/happyharrycn/actionformer_release" target="_blank">Code</a>
+          </p>
+        </div>
+        <div>
+          <video id="epic_video" width="150" muted playsinline>
+            <source src="images/epic_2022_video.webm" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <!-- Research Project 3 -->
+      <div class="research-item">
+        <div>
+          <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Bhunia_Doodle_It_Yourself_Class_Incremental_Learning_by_Drawing_a_Few_CVPR_2022_paper.pdf" target="_blank">
+            <h3>Doodle It Yourself: Class Incremental Learning by Drawing a Few Sketches</h3>
+          </a>
+          <p>
+            <strong>Authors:</strong> Ayan Kumar Bhunia, Viswanatha Reddy Gajjala, Subhadeep Koley, Rohit Kundu, Aneeshan Sain, Tao Xiang, Yi-Zhe Song.
+          </p>
+          <p>
+            <em>CVPR 2022</em>
+          </p>
+          <p>
+            <a href="https://github.com/AyanKumarBhunia/DIY-FSCIL" target="_blank">Code</a> |
+            <a href="https://arxiv.org/pdf/2203.14843.pdf" target="_blank">arXiv</a> |
+            <a href="https://www.marktechpost.com/2022/04/14/doodle-it-yourself-diy-fscil-a-novel-ai-framework-for-few-shot-class-incremental-learning-without-violating-the-data-privacy-and-ethical-norms/" target="_blank">Blog</a>
+          </p>
+        </div>
+        <div>
+          <img src="images/doodle_cvpr22.JPG" alt="CVPR22 Doodle">
+        </div>
+      </div>
+    </div>
+  </section>
 
-               <!-- Teaching Assistant Section -->
-               <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                  <tbody>
-                     <tr>
-                        <td style="padding:20px;width:100%;vertical-align:middle">
-                           <heading>
-                              <font size="5">Teaching Experience</font>
-                           </heading>
-                           <ul>
-                              <li>Graduate Teaching Assistant, MATH222, UW Madison, Spring 2023 (received <span style="color: red;">Superior</span> rating)</li>
-                              <li>Graduate Teaching Assistant, MATH222, UW Madison, Fall 2022 (received <span style="color: red;">Superior</span> rating)</li>
-                              <li>Graduate Teaching Assistant, MATH211, UW Madison, Spring 2022</li>
-                              <li>Graduate Teaching Assistant, MATH221, UW Madison, Fall 2021</li>
-                              <li>Undergraduate Teaching Assistant, IIIT Sri City, Computer Programming, Spring 2019</li>
-                              <li>Undergraduate Teaching Assistant, IIIT Sri City, Digital Signal Processing, Fall 2018</li>
-                              <li>Undergraduate Teaching Assistant, IIIT Sri City, Basic Electronic Circuits, Spring 2018</li>
-                              <li>Undergraduate Teaching Assistant, IIIT Sri City, Digital Signal Analysis and Applications, Fall 2017</li>
-                           </ul>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
+  <!-- Teaching Experience Section -->
+  <section id="teaching">
+    <div class="container content teaching">
+      <h2>Teaching Experience</h2>
+      <ul>
+        <li>Graduate Teaching Assistant, MATH222, UW Madison, Spring 2023 (received <span style="color: red;">Superior</span> rating)</li>
+        <li>Graduate Teaching Assistant, MATH222, UW Madison, Fall 2022 (received <span style="color: red;">Superior</span> rating)</li>
+        <li>Graduate Teaching Assistant, MATH211, UW Madison, Spring 2022</li>
+        <li>Graduate Teaching Assistant, MATH221, UW Madison, Fall 2021</li>
+        <li>Undergraduate Teaching Assistant, IIIT Sri City, Computer Programming, Spring 2019</li>
+        <li>Undergraduate Teaching Assistant, IIIT Sri City, Digital Signal Processing, Fall 2018</li>
+        <li>Undergraduate Teaching Assistant, IIIT Sri City, Basic Electronic Circuits, Spring 2018</li>
+        <li>Undergraduate Teaching Assistant, IIIT Sri City, Digital Signal Analysis and Applications, Fall 2017</li>
+      </ul>
+    </div>
+  </section>
 
-                     <!-- Other publications -->
-                     <table
-                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                           <tr>
-                              <td style="padding:20px;width:100%;vertical-align:middle">
-                                 <h2> Other Publications</h2>
-                                 <ul>
-                                    <li> Pinaki Nath Chowdhury, Ayan Kumar Bhunia , Viswanatha Reddy Gajjala, Aneeshan
-                                       Sain, Tao Xiang, Yi-Zhe Song Partially Does It: Towards Scene-Level FG-SBIR with
-                                       Partial Input. IEEE Conference on Computer Vision and Pattern Recognition
-                                       (<strong>CVPR</strong>), 2022 </li>
-                                    <li> Viswanatha Reddy Gajjala, Sai Prasanna Teja Reddy, Snehasis Mukherjee, Shiv Ram
-                                       Dubey, MERANet: Facial Micro-Expression Recognition using 3D Residual Attention
-                                       Network, in ICVGIP 2021, IIT Jodhpur, ACM. <span style="color: red;">Oral</span>
-                                    </li>
-                                    <li> Debapriya Tula, MS Shreyas, Viswanatha Reddy, Pranjal Sahu, Sumanth
-                                       Doddapaneni, Prathyush Potluri, Rohan Sukumaran, Parth Patwa, Offence detection
-                                       in dravidian languages using code-mixing index-based focal loss. SN COMPUT. SCI.
-                                       3, 330 (2022). https://doi.org/10.1007/s42979-022-01190-1</li>
-                                    <li> G. Viswanatha Reddy, BSNV Chaitanya, P. Prathyush, M. Sumanth, C. Mrinalini, P.
-                                       Dileep Kumar and Snehasis Mukherjee, DFW-PP: dynamic feature weighting-based
-                                       popularity prediction for social media content, Journal of Supercomputing,
-                                       Springer, Vol. 80, pp.- 5708-5730, 2024 </li>
-                                    <li> Parth Patwa , Viswanatha Reddy, Rohan Sukumaran, Sethuraman TV, Eptehal
-                                       Nashnoush, Sheshank Shankar, Rishemjit Kaur, Abhishek Singh, Ramesh Raskar, Can
-                                       Self Reported Symptoms Predict Daily COVID-19 Cases? <a
-                                          href="https://amulyayadav.github.io/AI4SG2021/">AI4SG Workshop at
-                                          <strong>IJCAI '21.</strong></a> <span style="color: red;">Oral</span> </li>
-                                    <li> G. Viswanatha Reddy, Snehasis Mukherjee and Mainak Thakur, Measuring
-                                       Photography Aesthetics with Deep CNNs, IET Image Processing, Vol. 14, No. 8, pp.-
-                                       1561-1570, 2020</li>
-                                    <li> G. Viswanatha Reddy, CVR Dharma Savarni and Snehasis Mukherjee, Facial
-                                       Expression Recognition in the wild, by Fusion of Deep Learnt and Hand-crafted
-                                       Features, Cognitive Systems Research, Elsevier, Vol. 62, pp.- 23-34, 2020</li>
-                                    <li> Md ShariqSuhail, Gajjala ViswanathaReddy, G Rambabu, CVR DharmaSavarni, VK
-                                       Mittal, Multi-functional secured smart home. 2016 International Conference on
-                                       Advances in Computing, Communications and Informatics (ICACCI)</li>
-                                 </ul>
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                  <tbody>
-                     <tr>
+  <!-- Other Publications Section -->
+  <section id="publications">
+    <div class="container content publications">
+      <h2>Other Publications</h2>
+      <ul>
+        <li>Pinaki Nath Chowdhury, Ayan Kumar Bhunia, Viswanatha Reddy Gajjala, Aneeshan Sain, Tao Xiang, Yi-Zhe Song. “Partially Does It: Towards Scene-Level FG-SBIR with Partial Input.” IEEE Conference on Computer Vision and Pattern Recognition (<strong>CVPR</strong>), 2022.</li>
+        <li>Viswanatha Reddy Gajjala, Sai Prasanna Teja Reddy, Snehasis Mukherjee, Shiv Ram Dubey. “MERANet: Facial Micro-Expression Recognition using 3D Residual Attention Network.” ICVGIP 2021, IIT Jodhpur, ACM. <span style="color: red;">Oral</span></li>
+        <li>Debapriya Tula, MS Shreyas, Viswanatha Reddy, Pranjal Sahu, Sumanth Doddapaneni, Prathyush Potluri, Rohan Sukumaran, Parth Patwa. “Offence detection in dravidian languages using code-mixing index-based focal loss.” SN COMPUT. SCI. 3, 330 (2022). <a href="https://doi.org/10.1007/s42979-022-01190-1" target="_blank">DOI</a></li>
+        <li>G. Viswanatha Reddy, BSNV Chaitanya, P. Prathyush, M. Sumanth, C. Mrinalini, P. Dileep Kumar, Snehasis Mukherjee. “DFW-PP: Dynamic Feature Weighting-based Popularity Prediction for Social Media Content.” Journal of Supercomputing, Springer, Vol. 80, pp. 5708-5730, 2024.</li>
+        <li>Parth Patwa, Viswanatha Reddy, Rohan Sukumaran, Sethuraman TV, Eptehal Nashnoush, Sheshank Shankar, Rishemjit Kaur, Abhishek Singh, Ramesh Raskar. “Can Self Reported Symptoms Predict Daily COVID-19 Cases?” AI4SG Workshop at <strong>IJCAI '21</strong>. <span style="color: red;">Oral</span></li>
+        <li>G. Viswanatha Reddy, Snehasis Mukherjee, Mainak Thakur. “Measuring Photography Aesthetics with Deep CNNs.” IET Image Processing, Vol. 14, No. 8, pp. 1561-1570, 2020.</li>
+        <li>G. Viswanatha Reddy, CVR Dharma Savarni, Snehasis Mukherjee. “Facial Expression Recognition in the Wild, by Fusion of Deep Learnt and Hand-crafted Features.” Cognitive Systems Research, Elsevier, Vol. 62, pp. 23-34, 2020.</li>
+        <li>Md Shariq Suhail, Gajjala Viswanatha Reddy, G Rambabu, CVR Dharma Savarni, VK Mittal. “Multi-functional Secured Smart Home.” 2016 International Conference on Advances in Computing, Communications and Informatics (ICACCI).</li>
+      </ul>
+    </div>
+  </section>
 
-                        <!-- Reviewer-->
-                        <td style="padding:20px;width:100%;vertical-align:middle">
-                           <heading>
-                              <font size="5">Professional & Voluntary work</font>
-                           </heading>
-                           <p>
-                              <li>Served as a reviewer for:</li>
-                           </p>
-                           <ul>
-                              <!-- <li>International Conference on Learning Representations(ICLR) 2025</li> -->
-                              <li>WACV-2021, 2023, 2025 (Round 1 & 2); IEEE/CVF Winter Conference on Applications of
-                                 Computer Vision</li>
-                              <li> <a href="https://iclr.cc/Conferences/2024/CallForTinyPapers">ICLR 2024 TinyPapers</a>
-                              </li>
-                              <li>AAAI 2024. Member of the Program Chair (DeFactify24)</li>
-                              <li> <a href="https://www.cv4animals.com/">Computer Vision for Animal Behavior Tracking
-                                    and Modeling CVPR 2024</a> </li>
-                              <li>Amazon Conference on Computer Vision 2024</li>
-                              <li>27th International Conference on Pattern Recognition (ICPR - 2024)</li>
-                              <li>Received invitations for CVPR 2022, CVPR 2023, WACV 2022, and WACV 2024.</li>
-                           </ul>
-                        </td>
-                     </tr>
-                  </tbody>
-                  
+  <!-- Professional & Voluntary Work Section -->
+  <section id="professional">
+    <div class="container content professional">
+      <h2>Professional &amp; Voluntary Work</h2>
+      <p>Served as a reviewer for:</p>
+      <ul>
+        <li><a href="https://www.sciencedirect.com/journal/pattern-recognition" target="_blank">Pattern Recognition</a> Journal</li>
+        <li>WACV-2021, 2023, 2025 (Round 1 &amp; 2); IEEE/CVF Winter Conference on Applications of Computer Vision</li>
+        <li><a href="https://iclr.cc/Conferences/2024/CallForTinyPapers" target="_blank">ICLR 2024 TinyPapers</a></li>
+        <li>AAAI 2024. Member of the Program Chair (DeFactify24)</li>
+        <li><a href="https://www.cv4animals.com/" target="_blank">Computer Vision for Animal Behavior Tracking and Modeling CVPR 2024</a></li>
+        <li>Amazon Conference on Computer Vision 2024</li>
+        <li>27th International Conference on Pattern Recognition (ICPR - 2024)</li>
+        <li>Received invitations for CVPR 2022, CVPR 2023, WACV 2022, and WACV 2024.</li>
+      </ul>
+    </div>
+  </section>
 
-                  <script>
-                     const videoElement = document.getElementById('epic_video');
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <!-- <p>
+        Website template inspired by 
+        <a href="https://github.com/jonbarron/jonbarron_website" target="_blank">Jon Barron</a>
+      </p> -->
+      <p>
+        <a href="https://hits.seeyoufarm.com" target="_blank">
+          <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fviswanathareddygajjala.github.io&count_bg=%233D89C8&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false" alt="Hits">
+        </a>
+      </p>
+    </div>
+  </footer>
 
-                     videoElement.addEventListener('mouseover', function () {
-                        videoElement.play();
-                     });
-
-                     videoElement.addEventListener('mouseout', function () {
-                        videoElement.pause();
-                        videoElement.currentTime = 0; // Optional: reset to the beginning of the video
-                     });
-                  </script>
-      </tbody>
-   </table>
-   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-      <tbody>
-         <tr>
-            <td style="padding:0px">
-               <br>
-               <p style="text-align:cneter;font-size:small;">
-                  Website template from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>
-               </p>
-            </td>
-         </tr>
-      </tbody>
-   </table>
-   </td>
-   </tr>
-   </table>
+  <!-- JavaScript for Video Hover Behavior -->
+  <script>
+    const epicVideo = document.getElementById('epic_video');
+    if (epicVideo) {
+      epicVideo.addEventListener('mouseover', function () {
+        this.play();
+      });
+      epicVideo.addEventListener('mouseout', function () {
+        this.pause();
+        this.currentTime = 0;
+      });
+    }
+  </script>
 </body>
-<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fviswanathareddygajjala.github.io&count_bg=%233D89C8&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
 </html>
